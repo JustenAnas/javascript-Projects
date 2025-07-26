@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe - Clean UI</title>
+  <link rel="stylesheet" href="style.css" />
+   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoaURRNVvEXk5ntoPuger_xSV_r9iOXsRsMQ&s" type="image/png" />
+
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+<hr>
+    <!-- Turn Indicator -->
+    <div class="status" id="turnText">Your Turn</div>
+
+    <!-- Game Board -->
+     <div class="line"></div>
+    <div class="board" id="board">
+      
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+ <p id="message" style="color: red; font-size: 6px ; font-weight: bolder;"></p>
+    <!-- Result Section -->
+    <div class="result" id="resultText">
+      <!-- JS will inject "You Win" / "You Lose" here -->
+    </div>
+
+    <!-- Win/Lose Images -->
+    <div class="result-image">
+      <!-- <img id="winImg" src="win.png" alt="You Win" class="hidden" /> -->
+      <!-- <img id="loseImg" src="lose.png" alt="You Lose" class="hidden" /> -->
+    </div>
+
+    <!-- Reset Button -->
+    <button id="resetBtn">Reset Game</button>
+  </div>
+
+  <!-- Background Music (autoplay muted for testing; controlled via JS) -->
+  <!-- <audio id="bgMusic" loop>
+    <source src="bg-music.mp3" type="audio/mpeg" />
+  </audio> -->
+
+  <!-- Win & Lose Sound placeholders -->
+  <!-- <audio id="winSound">
+    <source src="win-sound.mp3" type="audio/mpeg" />
+  </audio>
+  <audio id="loseSound">
+    <source src="lose-sound.mp3" type="audio/mpeg" />
+  </audio> -->
+
+  <script src="script.js"></script>
+</body>
+</html>

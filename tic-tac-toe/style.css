@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.status {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.cell {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #d1d1d1;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #2c3e50;
+}
+
+.result-image {
+  margin: 1rem 0;
+}
+
+.result-image img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#resetBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resetBtn:hover {
+  background-color: #16a085;
+}
+.line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .board {
+    max-width: 280px;
+    gap: 8px;
+  }
+
+  .cell {
+    font-size: 2rem;
+  }
+
+  #resetBtn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .board {
+    max-width: 240px;
+    gap: 6px;
+  }
+
+  .cell {
+    font-size: 1.5rem;
+  }
+
+  .result {
+    font-size: 1.2rem;
+  }
+
+  #resetBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 399px) {
+  .board {
+    max-width: 200px;
+    gap: 4px;
+  }
+
+  .cell {
+    font-size: 1.2rem;
+    padding: 0; /* You had 15px here, which broke aspect-ratio */
+  }
+
+  .result {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #resetBtn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
