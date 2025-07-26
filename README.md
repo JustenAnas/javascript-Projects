@@ -21,6 +21,11 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Tech:** HTML, CSS, JavaScript
 - **Folder:** `myplaylist`
 
+### 4. ❌ Tic Tac Toe
+- Classic Tic Tac Toe game with a clean UI and interactive gameplay.
+- Tech: HTML, CSS, JavaScript
+- Folder: tic-tac-toe
+
 ---
 
 ## 🛠 How to Run
