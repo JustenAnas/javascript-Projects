@@ -1,0 +1,285 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-viewport base */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+}
+body {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribute top & bottom */
+  align-items: center;
+  overflow: hidden; /* 🚫 no scroll */
+  font-family: "Segoe UI", sans-serif;
+  background: transparent;
+  position: relative;
+}
+
+/* (Optional) Full-screen iframe background */
+.background-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  z-index: 0;
+  pointer-events: none; /* allow clicks to pass through */
+}
+
+/* Clock container—always centered by flex on body */
+.clock-container {
+  position: relative;
+  width: 500px; /* Adjust for bigger/smaller clock */
+  height: 500px;
+  z-index: 10;
+}
+
+/* Clock face */
+.clock {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  overflow: visible;
+}
+
+/* Center dot */
+.center-dot {
+  position: absolute;
+  top: 50%;
+  left: 50.5%;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px 1px #fff3;
+  z-index: 10;
+}
+
+/* Hands */
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  border-radius: 4px;
+  background: white;
+  transform: translateX(-50%) rotate(0deg);
+  transition: transform 0.1s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+}
+.hour-hand {
+  width: 8px;
+  height: 120px;
+  z-index: 5;
+}
+.minute-hand {
+  width: 6px;
+  height: 160px;
+  background: #5eead4;
+  z-index: 6;
+}
+.second-hand {
+  width: 2px;
+  height: 190px;
+  background: #ef4444;
+  z-index: 7;
+}
+
+/* Numbers wrapper */
+.numbers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Number style & placement using transforms */
+/* Each <span class="num"> must have inline style="--i:1" up to 12 */
+.num {
+  position: absolute;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+
+/* Position each number manually - this actually works */
+.num:nth-child(1) {
+  top: 12%;
+  left: 75%;
+} /* 1 */
+.num:nth-child(2) {
+  top: 29%;
+  left: 89%;
+} /* 2 */
+.num:nth-child(3) {
+  top: 50%;
+  left: 96%;
+} /* 3 */
+.num:nth-child(4) {
+  top: 71%;
+  left: 90%;
+} /* 4 */
+.num:nth-child(5) {
+  top: 88%;
+  left: 75%;
+} /* 5 */
+.num:nth-child(6) {
+  top: 95%;
+  left: 50%;
+} /* 6 */
+.num:nth-child(7) {
+  top: 88%;
+  left: 26%;
+} /* 7 */
+.num:nth-child(8) {
+  top: 72%;
+  left: 10%;
+} /* 8 */
+.num:nth-child(9) {
+  top: 52%;
+  left: 4%;
+} /* 9 */
+.num:nth-child(10) {
+  top: 31%;
+  left: 9%;
+} /* 10 */
+.num:nth-child(11) {
+  top: 12%;
+  left: 24%;
+} /* 11 */
+.num:nth-child(12) {
+  top: 4%;
+  left: 50%;
+} /* 12 */
+
+.clock-controls {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.clock-controls button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffffd9;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+.clock-controls button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.clock-controls button:active {
+  transform: scale(0.97);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.08);
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  :root {
+    --clock-size: 80vmin;
+    --number-offset: 0.44;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --clock-size: 90vmin;
+    --number-offset: 0.46;
+    --number-font: 0.08;
+  }
+}
+
+:root {
+  --clock-size: min(90vmin, 500px);
+}
+
+/* Clock container—responsive AF */
+.clock-container {
+  position: relative;
+  width: var(--clock-size);
+  height: var(--clock-size);
+  z-index: 10;
+}
+
+/* Numbers - responsive font */
+.num {
+  font-size: clamp(0.8rem, 1.3vw + 0.5rem, 1.7rem);
+}
+
+/* Center dot - responsive size */
+.center-dot {
+  width: clamp(8px, 2vw, 16px);
+  height: clamp(8px, 2vw, 16px);
+}
+
+/* Hands - scale with clock */
+.hour-hand {
+  height: calc(var(--clock-size) * 0.25);
+}
+.minute-hand {
+  height: calc(var(--clock-size) * 0.32);
+}
+.second-hand {
+  height: calc(var(--clock-size) * 0.38);
+}
+
+#alarmOverlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay-content {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Analog Clock</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Background iframe -->
+  <iframe
+    class="background-frame"
+    src="https://my.spline.design/claritystream-TxPQfWZQe6xSFM8DSO9VDcHl/"
+    allowfullscreen
+  ></iframe>
+  <div class="clock-container">
+    <div class="clock">
+      <div class="center-dot"></div>
+      <div class="hand hour-hand" id="hour"></div>
+      <div class="hand minute-hand" id="minute"></div>
+      <div class="hand second-hand" id="second"></div>
+      <!-- All 12 numbers -->
+    <div class="numbers">
+      <span class="num" style="--i:1;">1</span>
+      <span class="num" style="--i:2;">2</span>
+      <span class="num" style="--i:3;">3</span>
+      <span class="num" style="--i:4;">4</span>
+      <span class="num" style="--i:5;">5</span>
+      <span class="num" style="--i:6;">6</span>
+      <span class="num" style="--i:7;">7</span>
+      <span class="num" style="--i:8;">8</span>
+      <span class="num" style="--i:9;">9</span>
+      <span class="num" style="--i:10;">10</span>
+      <span class="num" style="--i:11;">11</span>
+      <span class="num" style="--i:12;">12</span>
+    </div>
+    </div>
+    
+    <!-- 🔘 Control Buttons (Alarm / Stopwatch) -->
+     <div id="stopwatchDisplay" style="color:white; font-size:24px; padding:10px 0; text-align:center;"></div>
+    <div class="clock-controls">
+      <button  id="alarm">⏰ Set Alarm</button>
+      <button  id="clock">🕒 Clock</button> 
+      <button id="stopwatch" >⏱ Start Stopwatch</button>
+    </div>
+  </div> 
+  </div>
+  <div id="alarmOverlay" style="display: none;">
+  <div class="overlay-content">
+    <label>
+      Hour: <input type="number" id="alarmHour" min="1" max="12" />
+    </label>
+    <label>
+      Minute: <input type="number" id="alarmMinute" min="0" max="59" />
+    </label>
+    <select id="amPm">
+      <option value="AM">AM</option>
+      <option value="PM">PM</option>
+    </select>
+    <button id="setAlarmBtn">Confirm</button>
+  </div>
+  </div>
+</body>
+<script src="script.js"></script> 
+</html>
