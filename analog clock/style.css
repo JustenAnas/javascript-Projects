@@ -1,4 +1,3 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +11,17 @@ body {
   width: 100%;
   overflow: hidden;
   font-family: "Segoe UI", sans-serif;
+
+  /* Center everything */
   display: flex;
   align-items: center;
   justify-content: center;
   background: transparent;
   position: relative;
 }
+
 body {
-  height: 93vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* distribute top & bottom */
@@ -45,9 +47,10 @@ body {
 /* Clock container—always centered by flex on body */
 .clock-container {
   position: relative;
-  width: 500px; /* Adjust for bigger/smaller clock */
-  height: 500px;
+  width: 500px;
+  height: auto; /* let it shrink */
   z-index: 10;
+  margin-top: 40px; /* optional: fine-tune placement */
 }
 
 /* Clock face */
@@ -183,11 +186,15 @@ body {
 } /* 12 */
 
 .clock-controls {
-  margin-top: 14px;
-  display: flex;
-  justify-content: center;
+  margin-top: 12px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
   gap: 20px;
-  flex-wrap: wrap;
+  z-index: 20;
+  max-width: 100%;
+  flex-direction: column; /* Makes room for cancel button below */
+  align-items: center;
 }
 
 .clock-controls button {
@@ -202,6 +209,9 @@ body {
   -webkit-backdrop-filter: blur(8px);
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  z-index: 9999; /* Makes sure it's on top */
+  max-width: 90vw;
+  white-space: nowrap;
 }
 
 .clock-controls button:hover {
@@ -281,5 +291,4 @@ body {
   border-radius: 12px;
   color: white;
   text-align: center;
-  font-size: 18px;
-}
+  font-size: 18px;}
