@@ -31,6 +31,11 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Tech :** HTML, CSS, JavaScript
 - **Folder:** `analog clock`
 
+### 6. 🚘 Animated Car
+- A slick animated car scene featuring a bouncing car, moving sky, endless track, and rotating wheels — all powered by front-end sorcery.
+-  **Tech :** HTML, CSS, JavaScript
+- **Folder:** `animated car`
+  
 ---
 
 ## 🛠 How to Run
