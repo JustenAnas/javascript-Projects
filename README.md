@@ -21,6 +21,16 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Tech:** HTML, CSS, JavaScript
 - **Folder:** `myplaylist`
 
+### 4. 🕹️ Tic Tac Toe
+- A web-based Tic Tac Toe game where two players can go head-to-head in a 3x3 grid showdown. Tracks turns, announces winners, and blocks further moves once the game ends.
+- **Tech :** HTML, CSS, JavaScript
+- **Folder:** `tic-tac-toe`
+
+### 5. ⏰ Analog Clock
+- A visually pleasing analog clock made from scratch using pure front-end magic. Hands move in real time based on your system time.
+- **Tech :** HTML, CSS, JavaScript
+- **Folder:** `analog clock`
+
 ---
 
 ## 🛠 How to Run
