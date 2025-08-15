@@ -35,6 +35,11 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - A slick animated car scene featuring a bouncing car, moving sky, endless track, and rotating wheels — all powered by front-end sorcery.
 -  **Tech :** HTML, CSS, JavaScript
 - **Folder:** `animated car`
+
+### 7. 🦖 Dino Game
+- A chrome based dino game featuring cactus as well as birds to make it same as google one also have btn to change the mode light to dark and dark to light as well
+- **Tech :** Html, Css, JavaScript
+- **Folder:** `dino game`
   
 ---
 
