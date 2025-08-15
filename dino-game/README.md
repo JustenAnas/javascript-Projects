@@ -26,3 +26,8 @@
 ✅ Minimalist & lightweight  
 
 ---
+
+## To Play visit 
+https://dinogamebyanas.netlify.app/
+
+---
