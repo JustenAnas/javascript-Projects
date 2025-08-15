@@ -172,7 +172,7 @@ body {
 
 @keyframes jumpAnim {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-250px); } /* much higher */
+  50%  { transform: translateY(-180px); } /* much higher */
   100% { transform: translateY(0); }
 }
 
