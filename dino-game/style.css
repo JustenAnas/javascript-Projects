@@ -202,28 +202,6 @@ body {
   z-index: 999;
   cursor: pointer;
 }
-.bird1, .bird2 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: fly 5s linear infinite;
-}
-
-.bird1 {
-  top: 140px;
-  animation-delay: 0s;
-}
-.bird2 {
-  top: 210px;
-  animation-delay: 7s;
-}
-
-@keyframes fly {
-  from { left: 100%; }
-  to { left: -60px; }
-}
 
 button {
     padding: 10px 20px;
@@ -244,4 +222,36 @@ button:hover {
 .inverted {
     filter: invert(1);
     transition: filter 0.3s ease;
+}
+/* flying motion */
+@keyframes fly {
+  from { right: -60px; }
+  to { right: 100%; }
+}
+
+/* wing flap */
+@keyframes flap {
+  0%   { background-image: url("img/bird1.png"); }
+  50%  { background-image: url("img/bird2.png"); }
+  100% { background-image: url("img/bird1.png"); }
+}
+
+.bird1, .bird2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fly 5s linear infinite, flap 1s steps(2) infinite;
+}
+
+/* heights */
+.bird1 {
+  top: 140px;   /* low bird */
+  animation-delay: 0s;
+}
+
+.bird2 {
+  top: 210px;   /* high bird */
+  animation-delay: 2.5s; /* half cycle, so they alternate */
 }
