@@ -30,6 +30,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - A visually pleasing analog clock made from scratch using pure front-end magic. Hands move in real time based on your system time.
 - **Tech :** HTML, CSS, JavaScript
 - **Folder:** `analog clock`
+- **To View:** https://analog-clock-deploy.netlify.app/
 
 ### 6. 🚘 Animated Car
 - A slick animated car scene featuring a bouncing car, moving sky, endless track, and rotating wheels — all powered by front-end sorcery.
