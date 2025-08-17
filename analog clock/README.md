@@ -41,6 +41,9 @@ Minimal, clean, and interactive — no frameworks, no clutter. Just good old cre
   - Clock hands based on elapsed time
 - Can be **stopped/reset** any time
 
+### TO view the project 
+- visit https://analog-clock-deploy.netlify.app/
+
 ## 📦 File Structure
 
 ```plaintext
