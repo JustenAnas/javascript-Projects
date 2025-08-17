@@ -34,52 +34,47 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ---------- spawn a random cactus or bird ----------
-  function spawnObstacle() {
-    if (obstacleIntervalId) clearInterval(obstacleIntervalId);
-    obstacleIntervalId = setInterval(() => {
-      if (gameOver) return;
-      if (!cactusContainer) return;
-      cactusContainer.innerHTML = ""; // remove any old obstacle
+function spawnObstacle() {
+  if (obstacleIntervalId) clearInterval(obstacleIntervalId);
 
-      const type = Math.random() < 0.5 ? "cactus" : "bird";
-      if (type === "cactus") {
-        const options = [
-          "img/big-cactus1.png",
-          "img/big-cactus2.png",
-          "img/big-cactus3.png",
-          "img/cactus1.png",
-          "img/cactus2.png",
-          "img/cactus3.png",
-        ];
-        const randomOption =
-          options[Math.floor(Math.random() * options.length)];
-        const cactus = document.createElement("img");
-        cactus.src = randomOption;
-        cactus.alt = "Cactus";
-        cactus.className = "cactus";
-        cactus.onerror = () =>
-          console.error("Cactus failed to load:", cactus.src);
-        cactusContainer.appendChild(cactus);
-      } else {
-        const bird = document.createElement("div");
-        bird.className = "bird1"; // default frame
-        bird.style.width = Math.random() < 0.5 ? "40px" : "60px"; // random size
-        bird.style.height = "40px";
-        bird.style.backgroundImage = 'url("img/bird1.png")';
-        bird.style.backgroundSize = "cover";
-        cactusContainer.appendChild(bird);
+  obstacleIntervalId = setInterval(() => {
+    if (gameOver) return;
+    if (!cactusContainer) return;
 
-        let wingUp = true;
-        const flapId = setInterval(() => {
-          bird.style.backgroundImage = wingUp
-            ? 'url("img/bird1.png")'
-            : 'url("img/bird2.png")';
-          wingUp = !wingUp;
-        }, 150);
-        birdIntervalIds.push(flapId);
-      }
-    }, 2000); // new obstacle every 2 sec
-  }
+    cactusContainer.innerHTML = ""; // clear old obstacle
+
+    const type = Math.random() < 0.5 ? "cactus" : "bird";
+
+    if (type === "cactus") {
+      // --- Cactus logic ---
+      const options = [
+        "img/big-cactus1.png",
+        "img/big-cactus2.png",
+        "img/big-cactus3.png",
+        "img/cactus1.png",
+        "img/cactus2.png",
+        "img/cactus3.png",
+      ];
+      const randomOption =
+        options[Math.floor(Math.random() * options.length)];
+      const cactus = document.createElement("img");
+      cactus.src = randomOption;
+      cactus.alt = "Cactus";
+      cactus.className = "cactus";
+      cactus.onerror = () =>
+        console.error("Cactus failed to load:", cactus.src);
+      cactusContainer.appendChild(cactus);
+
+    } else {
+      // --- Bird logic ---
+      const bird = document.createElement("div");
+      // randomly pick one of the two birds (different heights)
+      bird.className = Math.random() < 0.5 ? "bird1" : "bird2";
+      cactusContainer.appendChild(bird);
+    }
+  }, 3500); // new obstacle every 2 sec
+}
+
 
   // ---------- score counter ----------
   function startScoreCounter() {
@@ -99,7 +94,8 @@ document.addEventListener("DOMContentLoaded", () => {
     collisionIntervalId = setInterval(() => {
       const dino = document.querySelector(".dino");
       const cactus = document.querySelector(".cactus-container img");
-      const birds = document.querySelectorAll(".bird1");
+      const birds = document.querySelectorAll(".bird1, .bird2");
+
 
       if (!dino) return;
 
@@ -133,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (hit) {
         document
           .querySelectorAll(
-            ".dino_right_leg, .dino_left_leg, .cactus, .cloud, .track, .jump, .bird1"
+            ".dino_right_leg, .dino_left_leg, .cactus, .cloud, .track, .jump, .bird1 , .bird2"
           )
           .forEach((el) => {
             el.style.animation = "none";
@@ -203,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document
       .querySelectorAll(
-        ".dino, .dino_left_leg, .dino_right_leg, .cactus, .cloud, .track, .jump, .bird1"
+        ".dino, .dino_left_leg, .dino_right_leg, .cactus, .cloud, .track, .jump, .bird1 , .bird2"
       )
       .forEach((el) => (el.style.animation = ""));
 
