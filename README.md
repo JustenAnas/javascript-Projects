@@ -41,6 +41,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - A chrome based dino game featuring cactus as well as birds to make it same as google one also have btn to change the mode light to dark and dark to light as well
 - **Tech :** Html, Css, JavaScript
 - **Folder:** `dino game`
+-  **To View:**(https://dinogamebyanas.netlify.app/)
   
 ---
 
