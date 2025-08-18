@@ -19,7 +19,7 @@ The project features a looping animated sky, dynamic trees, infinite scrolling t
 
 ## 🚀 Live Demo
 
-🔗 [[**View on GitHub Pages**](https://justenanas.github.io/javascript-Projects/animated%20car/](https://animatedcarbyanas.netlify.app/))  
+🔗 https://animatedcarbyanas.netlify.app/  
 <sub>*Update link if needed after deployment*</sub>
 
 ---
