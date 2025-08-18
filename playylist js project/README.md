@@ -28,6 +28,8 @@ A simple, responsive music player built with **HTML, CSS, and JavaScript**.
 ├── /images
 │ └── icons and demo.png
 
+## To View 
+-visit:https://playlistjs.netlify.app/
 
 ## How to Use
 
