@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  background: #a19b9b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 50px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.game-container {
+  position: relative;
+  width: 800px;
+  height: 300px;
+  background-color: #000000;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+.dino-wrapper {
+  position: absolute;
+  bottom: -6px;
+  left: 50px;
+  width: fit-content;
+  height: auto;
+}
+.dino {
+  position: absolute;
+  bottom: 34px;
+  left: 50px;
+  width: 60px;
+  height: auto;
+}
+.dino_left_leg {
+  position: absolute;
+  bottom: 22px;
+  left: 60px;
+  width: 13px;
+  height: auto;
+  z-index: 2;
+  animation: leg-move 0.3s infinite alternate;
+  transform-origin: top center;
+}
+.dino_right_leg {
+  position: absolute;
+  bottom: 22px;
+  left: 74px;
+  height: 13px;
+  z-index: 2;
+  animation: leg-move 0.3s infinite alternate;
+  animation-delay: 0.15s;
+  transform-origin: top center;
+}
+
+@keyframes leg-move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.cactus-container {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.cactus {
+  position: absolute;
+  bottom: -3px;
+  right: -22px;
+  width: 62px;
+  height: 66px;
+  animation: move-cactus 4s linear infinite;
+}
+@keyframes move-cactus {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3000%);
+  }
+}
+
+.cloud-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Base cloud styling */
+.cloud {
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  background-image: url("img/cloud.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  animation: floatClouds 4.1s linear infinite;
+}
+.cloud1 {
+  top: 20px;
+  left: 100px;
+}
+
+.cloud2 {
+  top: 60px;
+  left: 300px;
+  animation-delay: 1s;
+}
+
+.cloud3 {
+  top: 40px;
+  left: 500px;
+  animation-delay: 2s;
+}
+
+/* Floating animation */
+@keyframes floatClouds {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-200px); /* Off-screen to the left */
+  }
+}
+
+.track {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 200%;
+  height: 40px;
+  animation: move-track 3s linear infinite;
+}
+
+@keyframes move-track {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.jump {
+  animation: jumpAnim 0.4s ease-out;
+  bottom: 85px;
+}
+
+@keyframes jumpAnim {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-150px); } /* much higher */
+  100% { transform: translateY(0); }
+}
+
+#score {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 20px;
+  font-family: monospace;
+  color: rgb(158, 158, 158);
+}
+#game-over-img {
+  display: none;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+#reset {
+  display: none;
+  position: absolute;
+  height: 40px;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Class to invert the colors of images */
+.inverted {
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+/* flying motion */
+@keyframes fly {
+  from { right: -60px; }
+  to { right: 100%; }
+}
+
+/* wing flap */
+@keyframes flap {
+  0%   { background-image: url("img/bird1.png"); }
+  50%  { background-image: url("img/bird2.png"); }
+  100% { background-image: url("img/bird1.png"); }
+}
+
+.bird1, .bird2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fly 5s linear infinite, flap 1s steps(2) infinite;
+}
+
+/* heights */
+.bird1 {
+  top: 140px;   /* low bird */
+  animation-delay: 0s;
+}
+
+.bird2 {
+  top: 210px;   /* high bird */
+  animation-delay: 2.5s; /* half cycle, so they alternate */
+}
