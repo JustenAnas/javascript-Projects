@@ -45,7 +45,20 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Tech :** Html, Css, JavaScript
 - **Folder:** `dino game`
 -  **To View:** https://dinogamebyanas.netlify.app/
-  
+
+ ### 8. 🧮 JS Calculator
+- A simple browser-based calculator supporting basic arithmetic, percentage, and clear functionality with a clean UI.
+- **Tech:** HTML, CSS, JavaScript
+- **Folder:** `calculator`
+- **To View:**  https://calculatorbyanas.netlify.app/
+
+ ### 8. Windows11
+- A simple demo of windows 11 with clickable ions 
+- **Tech:** HTML, CSS, JavaScript
+- **Folder:** `Windows11`
+- **To View:**  https://calculatorbyanas.netlify.app/
+
+
 ---
 
 ## 🛠 How to Run
