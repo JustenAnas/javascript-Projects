@@ -1,0 +1,113 @@
+  html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1; /* pushes footer down */
+      height: 76vh;
+    }
+ 
+
+    /* Navbar gradient */
+    .navbar {
+      background: linear-gradient(135deg, #0d6efd, #6610f2) !important;
+    }
+    .navbar .nav-link,
+    .navbar-brand {
+      color: #fff !important;
+    }
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+
+    /* Footer gradient */
+    footer {
+      background: linear-gradient(135deg, #6610f2, #0d6efd);
+      color: #fff;
+      width: 100%;
+    }
+    footer a {
+      color: #fff !important;
+    }
+
+    /* Make heading stand out */
+.form-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #4c1d95; /* deep purple */
+}
+
+/* Form styling */
+.custom-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+.custom-form .form-control {
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.custom-form .form-control:focus {
+  border-color: #6610f2;
+  box-shadow: 0 0 5px rgba(102, 16, 242, 0.4);
+}
+
+/* Submit button */
+.btn-submit {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #6610f2, #0d6efd);
+  transform: translateY(-2px);
+}
+.heading-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4a148c;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #6a1b9a;
+  }
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .form-heading {
+    font-size: 1.8rem;
+  }
+  .custom-form {
+    padding: 1.5rem;
+  }
+ 
+}

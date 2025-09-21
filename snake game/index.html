@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Snake — HTML + CSS Skeleton</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app-shell">
+<header class="header">
+<h1 class="title">Snake — Cursor Follow Mode</h1>
+<div class="controls">
+<button id="startBtn" class="btn">Start</button>
+<button id="pauseBtn" class="btn">Pause</button>
+<div class="score">hi score: <span id="hiBox">0</span></div>
+<div class="score">Score: <span id="scoreBox">0</span></div>
+</div>
+</header>
+
+
+<!-- Game board: JS will render snake here. -->
+<section id="gameBoard" class="game-board" tabindex="0" aria-label="Snake game board">
+<!-- Optional overlay message area (managed by JS) -->
+<div id="overlay" class="overlay hidden">Click Start</div>
+</section>
+
+
+<footer class="footer">Made with ✨ by  using html css and js</footer>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>   
