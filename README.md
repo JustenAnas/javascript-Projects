@@ -76,13 +76,13 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Folder:** `dictionary`
 - ** To View:**
 
-- ### 12. 📩Email Validator
+### 12. 📩Email Validator
 - simple email chechking or validating website it checks email for you if it was good for you or not .
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:**  `email validator`
 - ** To View:**
 
-- ### 13. 💲Currency Convertor
+### 13. 💲Currency Convertor
 - simple  currency convertor webssite used to let you know the diffrence in currency rate in different countries.
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:**  `currency convertor`
@@ -93,6 +93,13 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Tech:** HTML , CSS ,JS
 - **Folder:**  `snake game`
 -  ** To View:**
+
+### 15. 🗣️Text to Speech 
+- simple website for your text to change into speech which speech i mean whose voice will it be windows voice will be used .
+- **Tech:** HTML , CSS ,JS
+- **Folder:**  `Text To Speech`
+-  ** To View:**
+
 ## 🛠 How to Run
 
 ### Node.js Projects
