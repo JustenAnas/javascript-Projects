@@ -64,11 +64,17 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Folder:** `WeatherApp`
 - **To View:**
 
-- ### 10. #QR with JS
+### 10. #QR with JS
 - simple qr generator using js and api no rocket science in it you want qr name it or give link in it you got it.
 - **Tech:** HTMML , CSS , JS , API
 - **Folder:** `qr with js `
---- ** To View:** 
+- ** To View:**
+
+### 11. Dictionary
+- simple dictionay you wanna know meaning of word search it here .
+- **Tech:** HTML , CSS ,JS, API
+- **Folder:** dictionary
+- ** To View:** 
 
 ## 🛠 How to Run
 
