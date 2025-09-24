@@ -52,7 +52,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Folder:** `calculator`
 - **To View:**  https://calculatorbyanas.netlify.app/
 
- ### 8. Windows11
+ ### 8.🖥️ Windows11
 - A simple demo of windows 11 with clickable ions 
 - **Tech:** HTML, CSS, JavaScript
 - **Folder:** `Windows11`
@@ -70,12 +70,29 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Folder:** `qr with js `
 - ** To View:**
 
-### 11. Dictionary
+### 11. 📕Dictionary
 - simple dictionay you wanna know meaning of word search it here .
 - **Tech:** HTML , CSS ,JS, API
-- **Folder:** dictionary
-- ** To View:** 
+- **Folder:** `dictionary`
+- ** To View:**
 
+- ### 12. 📩Email Validator
+- simple email chechking or validating website it checks email for you if it was good for you or not .
+- **Tech:** HTML , CSS ,JS, API
+- **Folder:**  `email validator`
+- ** To View:**
+
+- ### 13. 💲Currency Convertor
+- simple  currency convertor webssite used to let you know the diffrence in currency rate in different countries.
+- **Tech:** HTML , CSS ,JS, API
+- **Folder:**  `currency convertor`
+- ** To View:**
+
+### 14. 🐍Snake Game
+- simple snake game for you to play in your free time it has all the actual snake game concepts  .
+- **Tech:** HTML , CSS ,JS
+- **Folder:**  `snake game`
+-  ** To View:**
 ## 🛠 How to Run
 
 ### Node.js Projects
