@@ -52,49 +52,49 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - **Folder:** `calculator`
 - **To View:**  https://calculatorbyanas.netlify.app/
 
- ### 8.🖥️ Windows11
+ ### 9.🖥️ Windows11
 - A simple demo of windows 11 with clickable ions 
 - **Tech:** HTML, CSS, JavaScript
 - **Folder:** `Windows11`
 - **To View:**  https://calculatorbyanas.netlify.app/
 
-### 9. ☁️WeatherApp
+### 10. ☁️WeatherApp
 - simple weather app with great but simple ui/ux telling weather of not just india but international too also cities as well as villages .
 - **Tech:** HTML ,CSS , Javascript and API
 - **Folder:** `WeatherApp`
 - **To View:**
 
-### 10. #QR with JS
+### 11. #QR with JS
 - simple qr generator using js and api no rocket science in it you want qr name it or give link in it you got it.
 - **Tech:** HTMML , CSS , JS , API
 - **Folder:** `qr with js `
 - ** To View:**
 
-### 11. 📕Dictionary
+### 12. 📕Dictionary
 - simple dictionay you wanna know meaning of word search it here .
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:** `dictionary`
 - ** To View:**
 
-### 12. 📩Email Validator
+### 13. 📩Email Validator
 - simple email chechking or validating website it checks email for you if it was good for you or not .
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:**  `email validator`
 - ** To View:**
 
-### 13. 💲Currency Convertor
+### 14. 💲Currency Convertor
 - simple  currency convertor webssite used to let you know the diffrence in currency rate in different countries.
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:**  `currency convertor`
 - ** To View:**
 
-### 14. 🐍Snake Game
+### 15. 🐍Snake Game
 - simple snake game for you to play in your free time it has all the actual snake game concepts  .
 - **Tech:** HTML , CSS ,JS
 - **Folder:**  `snake game`
 -  ** To View:**
 
-### 15. 🗣️Text to Speech 
+### 16. 🗣️Text to Speech 
 - simple website for your text to change into speech which speech i mean whose voice will it be windows voice will be used .
 - **Tech:** HTML , CSS ,JS
 - **Folder:**  `Text To Speech`
