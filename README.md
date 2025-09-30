@@ -68,7 +68,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple qr generator using js and api no rocket science in it you want qr name it or give link in it you got it.
 - **Tech:** HTMML , CSS , JS , API
 - **Folder:** `qr with js `
-- ** To View:**
+- ** To View:**  https://qrwithjs.netlify.app/
 
 ### 12. 📕Dictionary
 - simple dictionay you wanna know meaning of word search it here .
