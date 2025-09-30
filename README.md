@@ -86,7 +86,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple  currency convertor webssite used to let you know the diffrence in currency rate in different countries.
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:**  `currency convertor`
-- ** To View:**
+- ** To View:** https://currencyconvertorbyanas.netlify.app/
 
 ### 15. 🐍Snake Game
 - simple snake game for you to play in your free time it has all the actual snake game concepts  .
