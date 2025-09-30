@@ -20,3 +20,9 @@ This project lets you quickly generate QR codes from any text or URL.
 - **QR Code API**  
 
 ---
+
+## 🚀 Live Demo
+
+🔗 https://qrwithjs.netlify.app/ 
+
+---
