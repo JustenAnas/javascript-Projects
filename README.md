@@ -98,7 +98,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple website for your text to change into speech which speech i mean whose voice will it be windows voice will be used .
 - **Tech:** HTML , CSS ,JS
 - **Folder:**  `Text To Speech`
--  ** To View:**
+-  ** To View:** https://texttospeechbyanas.netlify.app/
 
 ## 🛠 How to Run
 
