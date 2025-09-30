@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  /* background: url("bg.jpeg"); */
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Boot Screen */
+#boot-screen video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop */
+.hidden {
+  display: none;
+}
+
+.wallpaper {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: rgb(243 243 243);
+  backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* Taskbar Center */
+.taskbar-center {
+  display: flex;
+  /* gap: 215px; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 370px;
+}
+
+.task-icon {
+  width: 295px;
+  height: 54px;
+  cursor: pointer;
+}
+
+/* Taskbar Right */
+.taskbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -250px;
+}
+/* .desc-icons{ */
+/* position: absolute; */
+/* } */
+.chromeicon {
+ height: 34px;
+    position: absolute;
+    left: 50px;
+    top: 111px;
+}
+.edgeicon {
+    height: 34px;
+    position: absolute;
+    left: 71px;
+    top: 268px;
+}
+.recyclebinicon {
+      height: 38px;
+    position: absolute;
+    left: 115px;
+    top: 40px;
+}
+.edgeicon2 {
+     height: 24px;
+    bottom: 18px;
+    left: 764px;
+    position: absolute;
+}
+.startMenu{
+  position: absolute;
+  bottom: -600px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in;
+}
+.startMenu img{
+  width: 570px;
+  border-radius: 12px;
+}
