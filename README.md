@@ -92,7 +92,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple snake game for you to play in your free time it has all the actual snake game concepts  .
 - **Tech:** HTML , CSS ,JS
 - **Folder:**  `snake game`
--  ** To View:**
+-  ** To View:** https://snakegamebyanas.netlify.app/
 
 ### 16. 🗣️Text to Speech 
 - simple website for your text to change into speech which speech i mean whose voice will it be windows voice will be used .
