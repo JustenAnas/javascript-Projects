@@ -80,7 +80,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple email chechking or validating website it checks email for you if it was good for you or not .
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:**  `email validator`
-- ** To View:**
+- ** To View:** https://emailvalidatorbyanas.netlify.app/
 
 ### 14. 💲Currency Convertor
 - simple  currency convertor webssite used to let you know the diffrence in currency rate in different countries.
