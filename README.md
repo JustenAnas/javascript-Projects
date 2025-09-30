@@ -74,7 +74,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple dictionay you wanna know meaning of word search it here .
 - **Tech:** HTML , CSS ,JS, API
 - **Folder:** `dictionary`
-- ** To View:**
+- ** To View:** https://dictionarywithapibyanas.netlify.app/
 
 ### 13. 📩Email Validator
 - simple email chechking or validating website it checks email for you if it was good for you or not .
