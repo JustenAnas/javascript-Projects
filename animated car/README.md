@@ -20,7 +20,6 @@ The project features a looping animated sky, dynamic trees, infinite scrolling t
 ## 🚀 Live Demo
 
 🔗 https://animatedcarbyanas.netlify.app/  
-<sub>*Update link if needed after deployment*</sub>
 
 ---
 
