@@ -56,7 +56,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - A simple demo of windows 11 with clickable ions 
 - **Tech:** HTML, CSS, JavaScript
 - **Folder:** `Windows11`
-- **To View:**  https://calculatorbyanas.netlify.app/
+- **To View:** https://windows11byanas.netlify.app/
 
 ### 10. ☁️WeatherApp
 - simple weather app with great but simple ui/ux telling weather of not just india but international too also cities as well as villages .
