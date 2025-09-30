@@ -62,7 +62,7 @@ A collection of JavaScript-based mini projects built to practice and explore fro
 - simple weather app with great but simple ui/ux telling weather of not just india but international too also cities as well as villages .
 - **Tech:** HTML ,CSS , Javascript and API
 - **Folder:** `WeatherApp`
-- **To View:**
+- **To View:** https://weatherbyanas.netlify.app/
 
 ### 11. #QR with JS
 - simple qr generator using js and api no rocket science in it you want qr name it or give link in it you got it.
