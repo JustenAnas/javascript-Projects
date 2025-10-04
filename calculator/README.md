@@ -1,23 +1,49 @@
-🚘 Car Animation
-A smooth, clean car animation built using HTML, CSS, and JavaScript — designed for performance, visual appeal, and responsive interaction.
-The project features a looping animated sky, dynamic trees, infinite scrolling track, and a bouncing car with rotating wheels.
+ # 🧮 Calculator
 
-✨ Features
-🎞️ Animated Background: Seamlessly scrolling sky and track
-🌳 Foreground Elements: Parallax-style trees layered for depth
-🚗 Bouncing Car: Includes realistic wheel rotation
-🔊 Audio Support: Background engine sound (optional)
-📱 Responsive Design: Optimized for desktop and mobile screens
-🚀 Live Demo
-🔗 https://animatedcarbyanas.netlify.app/
+A clean, responsive calculator built with **HTML, CSS, and JavaScript**.  
+The project features a simple yet modern design with smooth button interactions and support for all basic arithmetic operations.
 
-🛠️ Tech Stack
-HTML5
-CSS3 (with keyframe animations + media queries)
-Vanilla JavaScript
-🧠 How It Works
-The sky and track are set to repeat-x and animated using @keyframes to give a looping motion.
-The car remains fixed while the environment scrolls — giving the illusion of movement.
-Wheels rotate via CSS transform: rotate() and keyframes.
-Media queries adjust position and scale for smaller devices.
-Optional audio can be triggered to enhance immersion.
+---
+
+## ✨ Features
+- ➕➖✖️➗ **Basic Operations**: Addition, subtraction, multiplication, and division  
+- 🎨 **Modern UI**: Minimal and sleek design with hover effects  
+- ⚡ **Interactive Buttons**: Smooth animations on click  
+- 📱 **Responsive Design**: Optimized for both desktop and mobile screens  
+- 🧩 **Keyboard Support**: Perform calculations using your keyboard (optional)  
+
+---
+
+## 🚀 Live Demo
+🔗 [View Demo](https://your-calculator-link.netlify.app/)
+
+---
+
+## 🛠️ Tech Stack
+- **HTML5**  
+- **CSS3** (Flexbox, Grid, Media Queries, Animations)  
+- **Vanilla JavaScript**
+
+---
+
+## 🧠 How It Works
+1. **Input Handling**  
+   - Numbers and operators are displayed in the input field as the user clicks buttons.  
+
+2. **Calculation Engine**  
+   - JavaScript evaluates the expression using `eval()` or a custom parser for safety.  
+
+3. **Clear & Reset**  
+   - `C` button clears the input.  
+   - `←` button deletes the last digit/operator.  
+
+4. **Responsive Layout**  
+   - Flexbox/Grid ensures the calculator adjusts to any screen size.  
+
+---
+ 
+
+## ⚡ Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/JustenAnas/calculator.git
