@@ -1,4 +1,4 @@
-# 📱 Email Validator
+#  Email Validator
 
 A simple **Email Validator** built using **HTML, CSS, JavaScript**, and a public **Email Validator API**.  
 This project lets you quickly get email information and also you can know about your email if this good or not .
